@@ -17,7 +17,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 /**
  * 设置audio为静态文件夹
  */
-app.use(express.static('audios'));
+app.use('/audios', express.static('audios'));
 
 
 /**
@@ -48,10 +48,15 @@ app.post('/record.do', function (req, res) {
  */
 app.post('/upload', function (req, res) {
     var form = new multiParty.Form();
-    form.dictionary = 'audio';
-    form.parser(req, function (error, field, files) {
+    form.uploadDir = 'audios';
+    form.keepExtensions = true;
+    form.parse(req, function (error, fields, files) {
+        if (error) res.send('error : uploadFailed');
+        console.log(fields);
         console.log(files);
+        var successJson = {'success' : 'http://127.0.0.1:3002/' + files.audio[0].path};
+        res.send(successJson);
     });
 });
 
-app.listen(3002, '192.168.5.214');
+app.listen(3002, '127.0.0.1');
