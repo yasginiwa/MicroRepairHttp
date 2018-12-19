@@ -25,10 +25,19 @@ app.use('/audios', express.static('audios'));
  */
 app.get('/record', function (req, res) {
     var sqlParams = 'deviceId';
-    var sqlValue = '123123123';
+    var sqlValue = 'm110503121';
     DBUtil.query(sqlParams, sqlValue, function (error, results) {
-       if (error) console.log('查询失败' + error);
-       res.send(results[0]);
+       if (error) res.json({        // 失败时返回
+           status : 0,
+           msg : 'failed',
+       });
+
+       // 成功时返回
+       res.json({
+           status: 1,
+           msg : 'ok',
+           result : results
+       });
     });
 });
 
@@ -38,8 +47,17 @@ app.get('/record', function (req, res) {
 app.post('/record.do', function (req, res) {
     var sqlParams = [req.body.deviceId, req.body.cate, req.body.name, req.body.reason, req.body.result, req.body.audioDesc, req.body.date, req.body.engineer];
     DBUtil.add(sqlParams, function (error, result) {
-        if (error) res.send('{result : failed}');
-        res.send('{result : success}');
+        if (error) res.json({   // 失败时返回
+            status : 0,
+            msg : 'failed'
+        });
+
+        //  成功时返回
+        res.json({
+            status : 1,
+            msg : 'ok',
+            result : result
+        });
     });
 });
 
@@ -51,11 +69,16 @@ app.post('/upload', function (req, res) {
     form.uploadDir = 'audios';
     form.keepExtensions = true;
     form.parse(req, function (error, fields, files) {
-        if (error) res.send('error : uploadFailed');
-        console.log(fields);
-        console.log(files);
-        var successJson = {'success' : 'http://127.0.0.1:3002/' + files.audio[0].path};
-        res.send(successJson);
+        if (error) res.json({
+            status : 0,
+            msg : 'failed'
+        });
+
+        res.json({
+            status : 1,
+            msg : 'ok',
+            audioUrl : 'http://127.0.0.1:3002/' + files.audio[0].path
+        });
     });
 });
 
