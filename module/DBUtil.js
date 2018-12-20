@@ -10,17 +10,16 @@ var pool = mysql.createPool({
 /**
  * 查询
  */
-exports.query = function (sqlParams, sqlValue, callback) {
+exports.query = function (table, sqlParams, sqlValue, callback) {
     pool.getConnection(function (error, connection) {
         if (error) console.log('数据库连接失败' + error);
-        var sql = 'select * from t_repair where' + ' ' + sqlParams + '=' + '\'' + sqlValue + '\'';
+        var sql = 'select * from' + ' ' + table + ' ' + 'where' + ' ' + sqlParams + '=' + '\'' + sqlValue + '\'';
         connection.query(sql, function (queryError, results) {
             callback(queryError, results);
         });
         connection.release();
     })
 };
-
 
 /**
  * 插入
