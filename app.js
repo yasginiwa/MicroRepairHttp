@@ -4,13 +4,14 @@ var multiParty = require('multiparty');
 var DBUtil = require('./module/DBUtil');
 var jwt = require('jsonwebtoken');
 
-const salt = 'hg';
+const secretKey = 'hg';
 
 /**
  * 实例化express
  * @express express对象
  */
 var app = express();
+
 
 /**
  * 设置中间件  编码模式
@@ -23,6 +24,27 @@ app.use(bodyParser.urlencoded({extended: false}));
  */
 app.use('/audios', express.static('audios'));
 
+/**
+ * 接口验证中间件
+ */
+app.use(function (req, res, next) {
+    if (req.url === '/login' || req.url === '/upload') {
+        next();
+    } else {
+        var token = req.body.token;
+        jwt.verify(token, secretKey, function (error, decode) {
+            if (error) {
+                res.json({
+                    status: 403,
+                    msg: 'Token Invalid'
+                })
+            } else {
+                next();
+            }
+        })
+    }
+});
+
 
 /**
  * post登录路由
@@ -31,7 +53,7 @@ app.post('/login', function (req, res) {
     var user = req.body.user;
     DBUtil.query('t_authUsers', 'user', user, function (error, results) {
         if (results.length) {
-            var token = jwt.sign({user : user}, salt, {'expiresIn':'1h'});
+            var token = jwt.sign({user: user}, secretKey, {'expiresIn': '1h'});
             res.json({
                 status: 1,
                 msg: 'Authorized OK',
@@ -40,7 +62,7 @@ app.post('/login', function (req, res) {
         } else {
             res.json({
                 status: 0,
-                msg: 'Authorized failed'
+                msg: 'Authorized Failed'
             })
         }
     })
@@ -53,7 +75,7 @@ app.post('/login', function (req, res) {
 app.get('/record', function (req, res) {
     var table = 't_repair';
     var sqlParams = 'deviceId';
-    var sqlValue = 'abc123asdkjhaskjdlaksd';
+    var sqlValue = 'm110503121';
     DBUtil.query(table, sqlParams, sqlValue, function (error, results) {
         if (error) res.json({        // 失败时返回
             status: 0,
