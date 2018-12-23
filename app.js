@@ -28,20 +28,21 @@ app.use('/audios', express.static('audios'));
  * 接口验证中间件
  */
 app.use(function (req, res, next) {
-    if (req.url === '/login' || req.url === '/upload') {
-        next();
-    } else {
+    if (req.url !== '/login' && req.url !== '/upload') {
         var token = req.body.token;
         jwt.verify(token, secretKey, function (error, decode) {
             if (error) {
                 res.json({
                     status: 403,
                     msg: 'Token Invalid'
-                })
+                });
+                console.log('token过期');
             } else {
                 next();
             }
         })
+    } else {
+        next();
     }
 });
 
@@ -53,7 +54,7 @@ app.post('/login', function (req, res) {
     var user = req.body.user;
     DBUtil.query('t_authUsers', 'user', user, function (error, results) {
         if (results.length) {
-            var token = jwt.sign({user: user}, secretKey, {'expiresIn': '1h'});
+            var token = jwt.sign({user: user}, secretKey, {'expiresIn': '365 days'});
             res.json({
                 status: 1,
                 msg: 'Authorized OK',
@@ -121,15 +122,59 @@ app.post('/upload', function (req, res) {
     form.parse(req, function (error, fields, files) {
         if (error) res.json({
             status: 0,
-            msg: 'failed'
+            msg: 'Upload Failed'
         });
-
-        res.json({
-            status: 1,
-            msg: 'ok',
-            audioUrl: 'http://127.0.0.1:3002/' + files.audio[0].path
-        });
+        if (files != null) {
+            res.json({
+                status: 1,
+                msg: 'ok',
+                audioUrl: 'http://192.168.0.172:3002/' + files.audio[0].path
+            })
+        } else {
+            res.json({
+                status: 0,
+                msg: 'Audio Null',
+                audioUrl: null
+            })
+        }
     });
 });
 
-app.listen(3002, '127.0.0.1');
+app.post('/devicerecord', function (req, res) {
+    var table = 't_repair';
+    var sqlParams = 'deviceId';
+    var sqlValue = req.body.scanCode;
+    DBUtil.query(table, sqlParams, sqlValue, function (error, results) {
+        if (error) res.json({   //  查询失败返回
+            status: 0,
+            msg: 'Query Failed'
+        });
+
+        res.json({  //  查询成功
+            status: 1,
+            msg: 'ok',
+            result: results
+        })
+    })
+});
+
+app.post('/userrecord', function (req, res) {
+    var table = 't_repair';
+    var sqlParams = 'engineer';
+    var sqlValue = req.body.engineer;
+    console.log(sqlValue);
+    DBUtil.query(table, sqlParams, sqlValue, function (error, results) {
+        if (error) res.json({
+            status: 0,
+            mgs: 'Query Failed'
+        });
+
+        req.json({
+            status: 1,
+            msg: 'ok',
+            result: results
+        })
+    })
+});
+
+app.listen(3002, '192.168.0.172');

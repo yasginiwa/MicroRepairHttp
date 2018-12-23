@@ -2,29 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="423803c0-5d8b-4554-8642-c4101cc8e07f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/audios/ACgXsiN5PgNBX5lgyrh62rNN.aac" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/audios/ACvkpFMK3YVlwn-RdKdNlqjJ.aac" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/audios/ASurMAcTBi-K3TloUv87Bvd_.aac" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/audios/BQ-01U7KJiXidNDlf30gK7Zo.aac" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/audios/CqENdQvocc-lAZfxomSHLFwS.aac" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/audios/FT6KkxwUR5xG2bguw74sNQxg.aac" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/audios/HHCitlpRRtVowGUS7vI6x52J.aac" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/audios/NmPhlN1BZQdGROL0AhTBVGah.aac" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/audios/QbyAADBTBB1LLTc-zG58G-hm.aac" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/audios/SzzGNw6ZxiospeNmERmz_Vw-.aac" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/audios/Tf2xzkT04j7rWuMJJ3lHa0rh.aac" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/audios/U8dh6-XHmck-FVk9yVGEnpZn.aac" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/audios/_q9rIzLBAB1nIaPhYeciAYpK.aac" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/audios/cg4vAKFWQnH-SWn11Tu5zmZJ.aac" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/audios/d50blR1rXl2UxpqyXgxRdwui.aac" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/audios/e3NIEftLx1pmLGVl8_QwFe-z.aac" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/audios/fLSIcs_Y8ixNF-fIdGP-heI_.aac" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/audios/l-QIpeTpPD-zTWPjcZtPJ7gZ.aac" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/audios/lastest.img" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/audios/m8HLMtLi1kxMVhMrhSgnjP-N.aac" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/audios/mZZo9AhsN3wr2qpk0JtZCxHA.aac" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/audios/xXPCfRuflkNlugcuUqzbpIV7.aac" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/audios/1vrLjzvKrptEZZg9rMc_ubqM.aac" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/audios/Z5C8DIa7ECqeeechtAihHxCq.aac" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/audios/eR-qTsdeytFTFkTGS2ERrD-a.aac" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/audios/giZAZlgOEmsdwuM5qFbghPvB.aac" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/audios/qwJMHZCTP81ndMs5x_pcnoN2.aac" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/node_modules/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -41,8 +25,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="386">
-              <caret line="77" column="42" selection-start-line="77" selection-start-column="20" selection-end-line="77" selection-end-column="42" />
+            <state relative-caret-position="402">
+              <caret line="164" column="26" selection-start-line="164" selection-start-column="26" selection-end-line="164" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -52,6 +36,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>salt</find>
+      <find>403</find>
+      <find>`</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -65,10 +51,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="53" />
-    <option name="y" value="23" />
-    <option name="width" value="1600" />
-    <option name="height" value="796" />
+    <option name="y" value="847" />
+    <option name="width" value="1919" />
+    <option name="height" value="977" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -78,6 +63,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -88,18 +74,12 @@
             <path>
               <item name="MicroRepairHttp" type="b2602c69:ProjectViewProjectNode" />
               <item name="MicroRepairHttp" type="462c0819:PsiDirectoryNode" />
-              <item name="audios" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MicroRepairHttp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MicroRepairHttp" type="462c0819:PsiDirectoryNode" />
               <item name="module" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -143,23 +123,27 @@
       <updated>1545358458211</updated>
       <workItem from="1545358460506" duration="5834000" />
       <workItem from="1545378819796" duration="621000" />
+      <workItem from="1545386244602" duration="5649000" />
+      <workItem from="1545440096096" duration="2907000" />
+      <workItem from="1545528104388" duration="125000" />
+      <workItem from="1545547845676" duration="698000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6455000" />
+    <option name="totallyTimeSpent" value="15834000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="53" y="23" width="1600" height="796" extended-state="0" />
+    <frame x="0" y="23" width="1919" height="977" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49822694" visible="true" weight="0.16149461" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49822694" visible="true" weight="0.13435195" />
       <window_info id="Structure" order="1" sideWeight="0.50177306" side_tool="true" weight="0.16149461" />
       <window_info id="npm" order="2" sideWeight="0.50177306" side_tool="true" weight="0.16149461" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.203125" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.20225988" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -198,10 +182,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file:///Volumes/Z/微信小程序+Nodejs打造沃尔玛无人收银、无人值守货架、无人零售收银系统-赞助/41底部菜单增加购物车选项 以及把购物车单独抽离成一个组件（component）（12分51秒）/weixinshop-通过组件分离购物车/utils/hepler.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="885">
+          <caret line="59" column="16" lean-forward="true" selection-start-line="59" selection-start-column="16" selection-end-line="59" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="77" column="42" selection-start-line="77" selection-start-column="20" selection-end-line="77" selection-end-column="42" />
+        <state relative-caret-position="402">
+          <caret line="164" column="26" selection-start-line="164" selection-start-column="26" selection-end-line="164" selection-end-column="26" />
         </state>
       </provider>
     </entry>
