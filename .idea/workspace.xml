@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="423803c0-5d8b-4554-8642-c4101cc8e07f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/audios/1yshKwVFMxEj96DsH9UkZQ77.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/audios/8kFel2qOgG3Lr67pcm_CTc0x.m4a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/audios/T8vNpkKLm2YQP-ZKFatlg1oP.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/audios/kar7dDFODVWYXgCKDpl61M76.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/audios/pCHIifZjVvB4vPA1Wl3if8a1.m4a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/audios/qG_V_Am5RjJ6Ru7Lr0_uLatW.mp3" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/module/DBUtil.js" beforeDir="false" afterPath="$PROJECT_DIR$/module/DBUtil.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/node_modules/" />
@@ -26,8 +21,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="402">
-              <caret line="170" column="23" selection-start-line="170" selection-start-column="23" selection-end-line="170" selection-end-column="23" />
+            <state relative-caret-position="918">
+              <caret line="182" column="31" selection-start-line="182" selection-start-column="31" selection-end-line="182" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/module/DBUtil.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -48,16 +52,16 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/module/DBUtil.js" />
         <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/module/DBUtil.js" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="70" />
-    <option name="y" value="285" />
-    <option name="width" value="1600" />
-    <option name="height" value="796" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="-17" />
+    <option name="y" value="23" />
+    <option name="width" value="1920" />
+    <option name="height" value="977" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -137,23 +141,24 @@
       <workItem from="1545528104388" duration="125000" />
       <workItem from="1545547845676" duration="698000" />
       <workItem from="1545617536213" duration="3032000" />
+      <workItem from="1545654498058" duration="917000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18866000" />
+    <option name="totallyTimeSpent" value="19783000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="70" y="285" width="1600" height="796" extended-state="0" />
+    <frame x="693" y="450" width="1920" height="977" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49822694" visible="true" weight="0.13426219" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49822694" visible="true" weight="0.13375461" />
       <window_info id="Structure" order="1" sideWeight="0.50177306" side_tool="true" weight="0.16149461" />
       <window_info id="npm" order="2" sideWeight="0.50177306" side_tool="true" weight="0.16149461" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.20170455" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.20112994" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -188,15 +193,15 @@
     <entry file="file:///Volumes/Z/微信小程序+Nodejs打造沃尔玛无人收银、无人值守货架、无人零售收银系统-赞助/41底部菜单增加购物车选项 以及把购物车单独抽离成一个组件（component）（12分51秒）/weixinshop-通过组件分离购物车/utils/hepler.js" />
     <entry file="file://$PROJECT_DIR$/module/DBUtil.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-313">
-          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+        <state relative-caret-position="45">
+          <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="170" column="23" selection-start-line="170" selection-start-column="23" selection-end-line="170" selection-end-column="23" />
+        <state relative-caret-position="918">
+          <caret line="182" column="31" selection-start-line="182" selection-start-column="31" selection-end-line="182" selection-end-column="31" />
         </state>
       </provider>
     </entry>

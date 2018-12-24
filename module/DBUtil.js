@@ -1,7 +1,7 @@
 var mysql = require('mysql');
 
 var pool = mysql.createPool({
-    host : '192.168.10.100',
+    host : '192.168.0.172',
     database : 'hgdb',
     user : 'root',
     password : 'yasginiwa'

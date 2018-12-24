@@ -130,7 +130,7 @@ app.post('/upload', function (req, res) {
             res.json({
                 status: 1,
                 msg: 'ok',
-                audioUrl: 'http://192.168.10.100:3002/' + files.audio[0].path
+                audioUrl: 'http://192.168.0.172:3002/' + files.audio[0].path
             })
         } else {
             res.json({
@@ -180,4 +180,4 @@ app.post('/userrecord', function (req, res) {
     })
 });
 
-app.listen(3002, '192.168.10.100');
+app.listen(3002, '192.168.0.172');
