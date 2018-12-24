@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="423803c0-5d8b-4554-8642-c4101cc8e07f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/audios/1vrLjzvKrptEZZg9rMc_ubqM.aac" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/audios/Z5C8DIa7ECqeeechtAihHxCq.aac" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/audios/eR-qTsdeytFTFkTGS2ERrD-a.aac" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/audios/giZAZlgOEmsdwuM5qFbghPvB.aac" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/audios/qwJMHZCTP81ndMs5x_pcnoN2.aac" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/audios/1yshKwVFMxEj96DsH9UkZQ77.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/audios/8kFel2qOgG3Lr67pcm_CTc0x.m4a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/audios/T8vNpkKLm2YQP-ZKFatlg1oP.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/audios/kar7dDFODVWYXgCKDpl61M76.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/audios/pCHIifZjVvB4vPA1Wl3if8a1.m4a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/audios/qG_V_Am5RjJ6Ru7Lr0_uLatW.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/DBUtil.js" beforeDir="false" afterPath="$PROJECT_DIR$/module/DBUtil.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/node_modules/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -26,7 +27,7 @@
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="402">
-              <caret line="164" column="26" selection-start-line="164" selection-start-column="26" selection-end-line="164" selection-end-column="26" />
+              <caret line="170" column="23" selection-start-line="170" selection-start-column="23" selection-end-line="170" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -38,6 +39,7 @@
       <find>salt</find>
       <find>403</find>
       <find>`</find>
+      <find>throw</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -46,14 +48,16 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/module/DBUtil.js" />
         <option value="$PROJECT_DIR$/app.js" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="847" />
-    <option name="width" value="1919" />
-    <option name="height" value="977" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="70" />
+    <option name="y" value="285" />
+    <option name="width" value="1600" />
+    <option name="height" value="796" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -70,6 +74,11 @@
             <path>
               <item name="MicroRepairHttp" type="b2602c69:ProjectViewProjectNode" />
               <item name="MicroRepairHttp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MicroRepairHttp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MicroRepairHttp" type="462c0819:PsiDirectoryNode" />
+              <item name="audios" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MicroRepairHttp" type="b2602c69:ProjectViewProjectNode" />
@@ -127,23 +136,24 @@
       <workItem from="1545440096096" duration="2907000" />
       <workItem from="1545528104388" duration="125000" />
       <workItem from="1545547845676" duration="698000" />
+      <workItem from="1545617536213" duration="3032000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15834000" />
+    <option name="totallyTimeSpent" value="18866000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1919" height="977" extended-state="0" />
+    <frame x="70" y="285" width="1600" height="796" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49822694" visible="true" weight="0.13435195" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49822694" visible="true" weight="0.13426219" />
       <window_info id="Structure" order="1" sideWeight="0.50177306" side_tool="true" weight="0.16149461" />
       <window_info id="npm" order="2" sideWeight="0.50177306" side_tool="true" weight="0.16149461" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.20225988" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.20170455" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -161,13 +171,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/module/DBUtil.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="26" lean-forward="true" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/jsonwebtoken/verify.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-800">
@@ -182,17 +185,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///Volumes/Z/微信小程序+Nodejs打造沃尔玛无人收银、无人值守货架、无人零售收银系统-赞助/41底部菜单增加购物车选项 以及把购物车单独抽离成一个组件（component）（12分51秒）/weixinshop-通过组件分离购物车/utils/hepler.js">
+    <entry file="file:///Volumes/Z/微信小程序+Nodejs打造沃尔玛无人收银、无人值守货架、无人零售收银系统-赞助/41底部菜单增加购物车选项 以及把购物车单独抽离成一个组件（component）（12分51秒）/weixinshop-通过组件分离购物车/utils/hepler.js" />
+    <entry file="file://$PROJECT_DIR$/module/DBUtil.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="885">
-          <caret line="59" column="16" lean-forward="true" selection-start-line="59" selection-start-column="16" selection-end-line="59" selection-end-column="16" />
+        <state relative-caret-position="-313">
+          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="402">
-          <caret line="164" column="26" selection-start-line="164" selection-start-column="26" selection-end-line="164" selection-end-column="26" />
+          <caret line="170" column="23" selection-start-line="170" selection-start-column="23" selection-end-line="170" selection-end-column="23" />
         </state>
       </provider>
     </entry>

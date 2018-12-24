@@ -34,9 +34,9 @@ app.use(function (req, res, next) {
             if (error) {
                 res.json({
                     status: 403,
-                    msg: 'Token Invalid'
+                    msg: 'Token Invalid',
+                    result: []
                 });
-                console.log('token过期');
             } else {
                 next();
             }
@@ -81,6 +81,7 @@ app.get('/record', function (req, res) {
         if (error) res.json({        // 失败时返回
             status: 0,
             msg: 'failed',
+            results: []
         });
 
         // 成功时返回
@@ -100,7 +101,8 @@ app.post('/record.do', function (req, res) {
     DBUtil.add(sqlParams, function (error, result) {
         if (error) res.json({   // 失败时返回
             status: 0,
-            msg: 'failed'
+            msg: 'failed',
+            results: []
         });
 
         //  成功时返回
@@ -128,7 +130,7 @@ app.post('/upload', function (req, res) {
             res.json({
                 status: 1,
                 msg: 'ok',
-                audioUrl: 'http://192.168.0.172:3002/' + files.audio[0].path
+                audioUrl: 'http://192.168.10.100:3002/' + files.audio[0].path
             })
         } else {
             res.json({
@@ -147,7 +149,8 @@ app.post('/devicerecord', function (req, res) {
     DBUtil.query(table, sqlParams, sqlValue, function (error, results) {
         if (error) res.json({   //  查询失败返回
             status: 0,
-            msg: 'Query Failed'
+            msg: 'Query Failed',
+            results: []
         });
 
         res.json({  //  查询成功
@@ -162,14 +165,14 @@ app.post('/userrecord', function (req, res) {
     var table = 't_repair';
     var sqlParams = 'engineer';
     var sqlValue = req.body.engineer;
-    console.log(sqlValue);
     DBUtil.query(table, sqlParams, sqlValue, function (error, results) {
-        if (error) res.json({
+        if (error) res.json({   //  查询失败返回
             status: 0,
-            mgs: 'Query Failed'
+            msg: 'Query Failed',
+            results: []
         });
 
-        req.json({
+        res.json({  // 查询成功返回
             status: 1,
             msg: 'ok',
             result: results
@@ -177,4 +180,4 @@ app.post('/userrecord', function (req, res) {
     })
 });
 
-app.listen(3002, '192.168.0.172');
+app.listen(3002, '192.168.10.100');
