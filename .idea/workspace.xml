@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="423803c0-5d8b-4554-8642-c4101cc8e07f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/audios/2YkzjzHLqSo86B76cymGCe6A.aac" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/audios/7xeRDy2E39AfFNO0hbOfjSDd.aac" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/audios/8hyowTNgiE-pPFUvponQvSlg.aac" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/audios/egZIsY8vvL9cj_fyO40pBwi3.m4a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/audios/vcPRj8fXlAfA1lvt9NtUKznr.aac" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/audios/vmIqioVpKM_e1aIzNIh3VsVb.aac" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/audios/vrjnlreXifpu6vpY9jkSu_cx.aac" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/DBUtil.js" beforeDir="false" afterPath="$PROJECT_DIR$/module/DBUtil.js" afterDir="false" />
-    </list>
+    <list default="true" id="423803c0-5d8b-4554-8642-c4101cc8e07f" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/node_modules/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -64,8 +54,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="21" />
-    <option name="y" value="307" />
+    <option name="x" value="-99" />
+    <option name="y" value="466" />
     <option name="width" value="1600" />
     <option name="height" value="794" />
   </component>
@@ -153,20 +143,19 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23280000" />
+    <option name="totallyTimeSpent" value="23287000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="21" y="307" width="1600" height="794" extended-state="0" />
-    <editor active="true" />
+    <frame x="62" y="135" width="1600" height="794" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49822694" visible="true" weight="0.13362888" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49822694" visible="true" weight="0.13362888" />
       <window_info id="Structure" order="1" sideWeight="0.50177306" side_tool="true" weight="0.16149461" />
       <window_info id="npm" order="2" sideWeight="0.50177306" side_tool="true" weight="0.16149461" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2022792" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2022792" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
