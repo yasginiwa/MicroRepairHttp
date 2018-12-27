@@ -8,18 +8,34 @@ var pool = mysql.createPool({
 });
 
 /**
- * 查询
+ * 普通查询
  */
 exports.query = function (table, sqlParams, sqlValue, callback) {
     pool.getConnection(function (error, connection) {
-        if (error) console.log('数据库连接失败' + error);
-        var sql = 'select * from' + ' ' + table + ' ' + 'where' + ' ' + sqlParams + '=' + '\'' + sqlValue + '\'';
-        connection.query(sql, function (queryError, results) {
+        if (error) console.log('query数据库连接失败' + error);
+        var sql = 'select * from ' + table + ' where ' + sqlParams + ' = ?';
+        var param = [sqlValue];
+        connection.query(sql, param, function(queryError, results) {
             callback(queryError, results);
         });
         connection.release();
     })
 };
+
+/**
+ * 分页查询
+ */
+exports.pagingQuery = function(table, sqlParams, sqlValue, page, callback) {
+    pool.getConnection(function (error, connection) {
+        if (error) console.log('pagingQuery数据库连接失败' + error);
+        const sql = 'select * from ' + table + ' where ' + sqlParams + ' = ? order by r_id desc limit ' + page * 20 + ',20';
+        const param = [sqlValue];
+        connection.query(sql, param, function (queryError, results) {
+            callback(queryError, results);
+        });
+        connection.release();
+    })
+}
 
 /**
  * 插入

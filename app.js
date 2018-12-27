@@ -69,30 +69,6 @@ app.post('/login', function (req, res) {
     })
 });
 
-
-/**
- * get方式路由
- */
-app.get('/record', function (req, res) {
-    var table = 't_repair';
-    var sqlParams = 'deviceId';
-    var sqlValue = 'm110503121';
-    DBUtil.query(table, sqlParams, sqlValue, function (error, results) {
-        if (error) res.json({        // 失败时返回
-            status: 0,
-            msg: 'failed',
-            results: []
-        });
-
-        // 成功时返回
-        res.json({
-            status: 1,
-            msg: 'ok',
-            result: results
-        });
-    });
-});
-
 /**
  * post方式路由
  */
@@ -165,7 +141,8 @@ app.post('/userrecord', function (req, res) {
     var table = 't_repair';
     var sqlParams = 'engineer';
     var sqlValue = req.body.engineer;
-    DBUtil.query(table, sqlParams, sqlValue, function (error, results) {
+    var page = req.body.page;
+    DBUtil.pagingQuery(table, sqlParams, sqlValue, page, function (error, results) {
         if (error) res.json({   //  查询失败返回
             status: 0,
             msg: 'Query Failed',

@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="423803c0-5d8b-4554-8642-c4101cc8e07f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/audios/2YkzjzHLqSo86B76cymGCe6A.aac" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/audios/7xeRDy2E39AfFNO0hbOfjSDd.aac" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/audios/8hyowTNgiE-pPFUvponQvSlg.aac" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/audios/egZIsY8vvL9cj_fyO40pBwi3.m4a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/audios/vcPRj8fXlAfA1lvt9NtUKznr.aac" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/audios/vmIqioVpKM_e1aIzNIh3VsVb.aac" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/audios/vrjnlreXifpu6vpY9jkSu_cx.aac" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/DBUtil.js" beforeDir="false" afterPath="$PROJECT_DIR$/module/DBUtil.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/node_modules/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -16,11 +24,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1035">
-              <caret line="182" column="27" selection-start-line="182" selection-start-column="27" selection-end-line="182" selection-end-column="27" />
+            <state relative-caret-position="282">
+              <caret line="143" column="29" lean-forward="true" selection-start-line="143" selection-start-column="29" selection-end-line="143" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/module/DBUtil.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" column="29" lean-forward="true" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -41,14 +58,14 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/module/DBUtil.js" />
         <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/module/DBUtil.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="14" />
-    <option name="y" value="23" />
+    <option name="x" value="21" />
+    <option name="y" value="307" />
     <option name="width" value="1600" />
     <option name="height" value="794" />
   </component>
@@ -60,7 +77,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -82,6 +98,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -136,19 +153,20 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21554000" />
+    <option name="totallyTimeSpent" value="23280000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="14" y="23" width="1600" height="794" extended-state="0" />
+    <frame x="21" y="307" width="1600" height="794" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49822694" visible="true" weight="0.13362888" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49822694" visible="true" weight="0.13362888" />
       <window_info id="Structure" order="1" sideWeight="0.50177306" side_tool="true" weight="0.16149461" />
       <window_info id="npm" order="2" sideWeight="0.50177306" side_tool="true" weight="0.16149461" />
       <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.2022792" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2022792" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -181,17 +199,17 @@
       </provider>
     </entry>
     <entry file="file:///Volumes/Z/微信小程序+Nodejs打造沃尔玛无人收银、无人值守货架、无人零售收银系统-赞助/41底部菜单增加购物车选项 以及把购物车单独抽离成一个组件（component）（12分51秒）/weixinshop-通过组件分离购物车/utils/hepler.js" />
-    <entry file="file://$PROJECT_DIR$/module/DBUtil.js">
+    <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+        <state relative-caret-position="282">
+          <caret line="143" column="29" lean-forward="true" selection-start-line="143" selection-start-column="29" selection-end-line="143" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
+    <entry file="file://$PROJECT_DIR$/module/DBUtil.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1035">
-          <caret line="182" column="27" selection-start-line="182" selection-start-column="27" selection-end-line="182" selection-end-column="27" />
+        <state relative-caret-position="300">
+          <caret line="20" column="29" lean-forward="true" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
         </state>
       </provider>
     </entry>
