@@ -54,7 +54,7 @@ app.post('/login', function (req, res) {
     var user = req.body.user;
     DBUtil.query('t_authUsers', 'user', user, function (error, results) {
         if (results.length) {
-            var token = jwt.sign({user: user}, secretKey, {'expiresIn': '365 days'});
+            var token = jwt.sign({user: user}, secretKey, {'expiresIn': '100 days'});
             res.json({
                 status: 1,
                 msg: 'Authorized OK',
@@ -75,12 +75,13 @@ app.post('/login', function (req, res) {
 app.post('/record.do', function (req, res) {
     var sqlParams = [req.body.deviceId, req.body.cate, req.body.name, req.body.reason, req.body.result, req.body.audioDesc, req.body.date, req.body.engineer];
     DBUtil.add(sqlParams, function (error, result) {
-        if (error) res.json({   // 失败时返回
-            status: 0,
-            msg: 'failed',
-            results: []
-        });
-
+        if (error) {
+            res.json({   // 失败时返回
+                status: 0,
+                msg: 'failed',
+                results: []
+            });
+        }
         //  成功时返回
         res.json({
             status: 1,
@@ -88,7 +89,8 @@ app.post('/record.do', function (req, res) {
             result: result
         });
     });
-});
+})
+;
 
 /**
  * post上传路由
