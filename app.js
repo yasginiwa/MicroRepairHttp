@@ -3,8 +3,14 @@ var bodyParser = require('body-parser');
 var multiParty = require('multiparty');
 var DBUtil = require('./module/DBUtil');
 var jwt = require('jsonwebtoken');
+var https = require('https');
+var fs = require('fs');
 
 const secretKey = 'hg';
+var options = {
+    key: fs.readFileSync('cert/server.key', 'utf-8'),
+    cert: fs.readFileSync('cert/server.crt', 'utf-8')
+};
 
 /**
  * 实例化express
@@ -108,7 +114,7 @@ app.post('/upload', function (req, res) {
             res.json({
                 status: 1,
                 msg: 'ok',
-                audioUrl: 'http://192.168.0.172:3002/' + files.audio[0].path
+                audioUrl: 'http://192.168.5.248:10443/' + files.audio[0].path
             })
         } else {
             res.json({
@@ -159,4 +165,4 @@ app.post('/userrecord', function (req, res) {
     })
 });
 
-app.listen(3002, '192.168.0.172');
+https.createServer(options, app).listen(10443, '192.168.5.248');
